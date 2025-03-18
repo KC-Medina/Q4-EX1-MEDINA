@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 1</title>
+
+	<!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+	<body>
+		 <!-- Add Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<img src="file:///C:/Users/Kelsey/Downloads/59BpIkbEsT78R-removebg-preview.png">
+
+		<div class="container">
+
+
+        <h2>Hi, my name is Jootin! Let's test your skills in Math!.</h2>
+
+        <p>Enter a value for A : <input type="number" id="a" ></p>
+        <p>Enter a value for B : <input type="number" id="b" ></p>
+
+
+        <button class="bg-secondary bg-gradient" onclick="round()">Round </button>
+        <button class="bg-secondary bg-gradient" onclick="power()"> Power<button>
+        <button class="bg-secondary bg-gradient" onclick="Sqrt()">Get the sqrt </button>
+        <button class="bg-secondary bg-gradient" onclick="random()">random </button>
+
+        <h3 id="result"></h3>
+
+    	</div>
+
+    <script>
+
+    	 function round() {
+    	 	var a = document.getElementById("a").value; 
+    	 	var b = document.getElementById("b").value; 
+    	 	window.alert(Math.round(a)); 
+    	 }
+
+    	  function power() {
+    	 	var a = document.getElementById("a").value; 
+    	 	var b = document.getElementById("b").value; 
+    	 	window.alert(Math.pow(a,b)); 
+    	 }
+
+    	    function Sqrt() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        window.alert(Math.sqrt(a));
+    }
+
+    function random() {
+        var x = document.getElementById("a").value;
+        var y = document.getElementById("b").value;
+        window.alert(Math.round(Math.random() * (x)))
+    }
+
+	</script>
+
+<footer>
+	<p class="footer">&copy; <strong> Kelsey Medina | 9-Sapphire </strong> </p>
+
+
+</body>
+</html>
